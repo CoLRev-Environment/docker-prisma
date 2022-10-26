@@ -11,4 +11,4 @@ RUN apt-get update \
 RUN Rscript -e 'install.packages("PRISMA2020")'
 
 # copy files
-COPY /root/prisma.R /prisma.R
+COPY root/prisma.R /prisma.R
