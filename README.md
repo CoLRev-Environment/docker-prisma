@@ -6,4 +6,4 @@
 
 The docker image expects the path to a csv file as the input and returns a PRISMA diagram at the specified output path.
 
-`docker run --rm -ti colrev/prisma Rscript /prisma.R input.csv output.png`
+`docker run --rm -ti -v ${PWD}:/data colrev/prisma Rscript /prisma.R /data/PRISMA.csv /data/output.png`
